@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계산기</title>
+</head>
+<body>
+    <input type="text" id="num1" placeholder="첫 번째 수">
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+    </select>
+    <input type="text" id="num2" placeholder="두 번째 수">
+    <input type="button" value="계산" onclick="calculate()">
+    <span id="result">결과 출력</span>
+    
+    <script>
+        function calculate() {
+            let num1 = document.getElementById('num1').value;
+            let num2 = document.getElementById('num2').value;
+            let operator = document.getElementById('operator').value;
+            let resultElement = document.getElementById('result');
+            num1 = Number(num1);
+            num2 = Number(num2);
+            let result;
+            if (operator === '+') {
+                result = num1 + num2;
+            } else if (operator === '-') {
+                result = num1 - num2;
+            }
+            resultElement.textContent = '결과: ' + result;
+        }
+    </script>
+</body>
+</html>

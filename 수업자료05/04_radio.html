@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>좋아하는 국가는?</h1>
+    <input type="radio" name="nat" value="대한민국">대한민국
+    <input type="radio" name="nat" value="일본">일본
+    <input type="radio" name="nat" value="미국">미국
+    <input type="radio" name="nat" value="방글라데시">방글라데시
+</br>
+
+<input type="button" value="선택" onclick="result()">
+<script>
+    function result(){
+        let rs = document.getElementsByName('nat');
+        console.log(rs);
+        for(let i = 0; i < rs.length; i++){
+            if(rs[i].checked){
+                console.log(rs[i]);
+                console.log(rs[i].checked);
+                console.log(rs[i].value);
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

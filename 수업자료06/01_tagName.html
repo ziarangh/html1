@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="id" name="name" value="heiioWorld">
+
+    <input type="button" type="value">
+
+    <input type="checkbox">
+
+    <script>
+        //id호출
+        let do_id = document.getElementById('id');
+        console.log('id', do_id);
+
+        //name
+        let do_name = document.getElementsByName('name');
+        console.log('name', do_name);
+        for(let i=0; i<do_name.length; i++){
+            
+        }
+
+        //태그
+        let do_tag = document.getElementsByTagName('input');
+        console.log('tag', do_tag);
+        for(let i=0; i < do_tag.length; i++){
+            console.log(do_tag[i].value);
+            console.log(do_tag[i].type);
+        }
+    </script>
+</body>
+</html>

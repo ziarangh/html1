@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 클릭으로 이미지 보이기</title>
+    <style>
+        button {
+            background-color: green; 
+            color: white; 
+            padding: 15px 30px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+        }
+        button:hover {
+            background-color: green; 
+        }
+        img {
+            display: none; 
+        }
+    </style>
+</head>
+<body>
+    <button onclick="toggleImage()">이미지 보기</button>
+    <img id="myImage" src="/C:\Users\컴퓨터공학과\Desktop\html\수업자료03/고양이.webp" alt="My Image">
+
+    <script>
+        function toggleImage() {
+            const img = document.getElementById('myImage');
+            img.style.display = img.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>

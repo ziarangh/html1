@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 이벤트</title>
+    <style>
+        .di{
+            margin: 15px;
+            padding: 15px;
+            width: 140px;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            border: 1px solid #000;
+            border-radius:  15px;
+
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="di" onclick="클릭()">
+        임시버튼
+    </div>
+    <input type="button" value="버튼 1" onclick="클릭()">
+
+    <button>버튼2</button>
+
+<!-- text="javascript" 이거 없어도 됨  -->
+    <script text="javascript">
+        function 클릭(){
+            alert('javascript 실행');
+        }
+    </script>
+</body>
+</html>

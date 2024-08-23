@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tranceform</title>
+    <style>
+        .outline, .box{
+            width: 60px;
+            height: 60px;
+            
+        }
+        .outline{
+            margin-top: 20px;
+            border: 3px soild yellow;
+        }
+        .box{
+            background-color: deepskyblue;
+        }
+        .trancelate{
+            transform: translate(50px);
+        }
+        .trancelate1{
+            transform: translate(-50px);
+        }
+        .trancelate2{
+            transform: translate(100px, 0px);
+        }
+        .trancelate3{
+            transform: translateY(-50px);
+        }
+        .trancelate4{
+            transform: translateY(100px, 0px);
+        }
+        .trancelate5{
+            transform: translate(50px, 50px);
+        }
+
+        .scale{
+            transform: scsale(0.8);
+        }
+        .scale1{
+            transform: scale(1.5);
+        }
+        .scale2{
+            transform: scaleX(0.5);
+        }
+        .scale3{
+            transform: scaleY(0.5);
+        }
+
+        .rotate{
+            transform: rotate(45deg);
+        }
+        .rotateX{
+            transform: rotateX(1deg);
+        }
+        .perOunline{
+            perspective: 1px;
+        }
+        .skew{
+            transform: skew(15deg, 20deg);
+        }
+        .skew1{
+            transform: skewX(25deg);
+        }
+        .skew2{
+            transform: skewY(25deg);
+        }
+
+        
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <div class="box trancelate1"></div>
+    </div>
+    <div class="outline">
+        <div class="box trancelate2"></div>
+    </div>
+    <div class="outline">
+        <div class="box trancelate3"></div>
+    </div>
+    <div class="outline">
+        <div class="box trancelate4"></div>
+    </div>
+    <div class="outline">
+        <div class="box trancelate5"></div>
+    </div>
+
+
+    <h1>scale</h1>
+    <div class="outline">
+        <div class="box scale"></div>
+    </div>
+    <div class="outline">
+        <div class="box scale1"></div>
+    </div>
+    <div class="outline">
+        <div class="box scale2"></div>
+    </div>
+    <div class="outline">
+        <div class="box scale3"></div>
+    </div>
+
+    <h1>rotate</h1>
+    <div class="outline">
+        <div class="box rotate"></div>
+    </div>
+    <div class="outline perOunline">
+        <div class="box rotateX"></div>
+    </div>
+    <h1>skew</h1>
+    <div class="outline">
+        <div class="box skew"></div>
+    </div>
+    <div class="outline">
+        <div class="box skew2"></div>
+    </div>
+
+</body>
+</html>

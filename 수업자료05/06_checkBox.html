@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>좋아하는 취미</h1>
+    <input type="checkbox" name="hobbys" value="수영">수영
+    <input type="checkbox" name="hobbys" value="독서">독서
+    <input type="checkbox" name="hobbys" value="자전거">자전거
+    <input type="checkbox" name="hobbys" value="등산">등산
+    <input type="checkbox" name="hobbys" value="낚시">낚시
+    <input type="button" value="전송" onclick="hobby()">
+
+    <script>
+        function hobby(){
+            const hobby = document.getElementsByName('hobbys');
+            let hobbyCheck = 0;
+            for(var i = 0; i < hobby.length; i++){
+                hobbyCheck++;
+                console.log(hobby[i].checked);
+                console.log(hobby[i].value);
+            }
+        }
+        if(hobbyCheck == 0){
+            alert('선택한 값이 없습니다.');
+            return ;
+        }
+    </script>
+</body>
+</html>

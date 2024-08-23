@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input typr="text" name=""id="user_id">
+
+    <script>
+        var v1 = 'banana';
+        console.log(v1);
+        var v1 = 'apple';//재선언 가능
+        let le1 = 'banana';//재선언 불가
+
+        const con1 = '상수'
+        console.log(con1);
+
+        let yy;
+        console.log(yy);
+        let dd  =document.getElementById('user_id').value;
+        console.log(dd);
+        if(dd = 'underfined' || dd == null);//값이 할당 되지않은 상태 nudefined
+
+        let str = 'abc';
+        typeof(str);//데이터타입을 알려주는 코드
+        console.log('1', '2');//출력시 12
+        console.log(typeof(str), str);
+
+        //데이터타입 변환
+        let num = '100'*1;// 문자로 인식 let num = 100+'';
+        console.log(typeof(num), num);
+        //숫자인식 
+        console.log(typeof(Number('1.2')), Number('1.2'));
+        //숫자인식 (정수)
+        console.log(typeof(parseInt('1.2')), parseInt('1.2'));
+        //숫자인식(소수 점 나옴)
+        console.log(typeof(parseFloat('1.2')), parseFloat('1.2'));
+        //문자로 인식
+        console.log(typeof(string(100)), string(100));
+        //논리(true, false)
+        console.log(typeof(Boolean('true')), Boolean('true'));
+
+
+        console.log();//console, f12 개발자 도구에서 보는용( 배포시 없에야함)
+        
+    </script>
+</body>
+</html>

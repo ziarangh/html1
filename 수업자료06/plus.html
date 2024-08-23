@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 400px;
+            height: 500px;
+            border: 3px solid skyblue;
+            transition: width 2s, height 2s, background-color 2s, transform 2s;
+            text-align: center;
+        }
+        .wid {
+            width: 80vh;
+        }
+        .hei {
+            height: 800px;
+        }
+        .color {
+            background-color: red;
+        }
+        .left {
+            transform: translateX(-100px);
+        }
+        .right {
+            transform: translateX(100px);
+        }
+    </style>
+</head>
+<body>
+    <input type="button" id="btn1" value="너비 늘리기">
+    <input type="button" id="btn2" value="높이 늘리기">
+    <input type="button" id="btn3" value="색변경">
+    <input type="button" id="btn4" value="왼쪽으로 이동">
+    <input type="button" id="btn5" value="오른쪽으로 이동">
+    <div class="box"></div>
+
+    <script>
+        document.getElementById('btn1').addEventListener('click', wid);
+        document.getElementById('btn2').addEventListener('click', hei);
+        document.getElementById('btn3').addEventListener('click', color);
+        document.getElementById('btn4').addEventListener('click', left);
+        document.getElementById('btn5').addEventListener('click', right);
+
+        function wid() {
+            let box = document.querySelector('.box');
+            box.classList.toggle('wid');
+        }
+
+        function hei() {
+            let box = document.querySelector('.box');
+            box.classList.toggle('hei');
+        }
+
+        function color() {
+            let box = document.querySelector('.box');
+            box.classList.toggle('color');
+        }
+
+        function left() {
+            let box = document.querySelector('.box');
+            box.classList.remove('right');
+            box.classList.add('left');
+        }
+
+        function right() {
+            let box = document.querySelector('.box');
+            box.classList.remove('left');
+            box.classList.add('right');
+        }
+    </script>
+</body>
+</html>

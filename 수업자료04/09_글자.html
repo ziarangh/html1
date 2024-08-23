@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한글자씩 보이게 하기</title>
+    <style>
+        @import url('https://kor.pngtree.com/free-backgrounds-photos/%EC%96%B4%EB%91%90%EC%9A%B4-%EB%B6%84%EC%9C%84%EA%B8%B0');
+    body{
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        background-image: url("C:\Users\컴퓨터공학과\Desktop\html\수업자료04/어두운 이미지.png");
+        background-size: cover;
+        font-family: 'Bad Script', cursive;
+        overflow: hidden;
+
+    }
+    h1{
+        margin: 0;
+        padding: 0;
+        color: transparent;
+        font-size: 11em;
+    }
+    h1 span{
+        display: table-cell;
+        animation: animate 1s linear infinite;
+    }
+    h1 span:nth-child(5n){
+        animation-delay: 0.5s;
+    }
+    h1 span:nth-child(5n+1){
+        animation-delay: 1.5s;
+    }
+    h1 span:nth-child(5n+2){
+        animation-delay: 1.8s;
+    }
+    h1 span:nth-child(5n+3){
+        animation-delay: 0.8s;
+    }
+    h1 span:nth-child(5n+4){
+        animation-delay: 0.8s;
+    }
+    h1 span:nth-child(5n+5){
+        animation-delay: 1s;
+    }
+
+    @keyframes animate {
+        0%, 100%{
+            color: #fff;
+            filter: blur(2px);
+            text-shadow: 0 0 10px #00b3ff,
+            0 0 20px #00b3ff,
+            0 0 40px #00b3ff,
+            0 0 60px #00b3ff,
+            0 0 80px #00b3ff,
+            0 0 100px #00b3ff,
+            0 0 120px #00b3ff;
+
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <h1>
+        <span>H</span>
+        <span>e</span>
+        <span>l</span>
+        <span>l</span>
+        <span>o</span>
+        <span>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <span>W</span>
+        <span>o</span>
+        <span>r</span>
+        <span>l</span>
+        <span>d</span>
+        
+    </h1>
+</body>
+</html>

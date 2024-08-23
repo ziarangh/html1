@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식 식별자</title>
+    <style>
+        ul:nth-child(5){
+            background-color: yellow;
+        }
+        ul>li:nth-child(3n){
+            background-color: orange;
+        }
+        ul>li:nth-child(3n){
+            background-color: red;
+        }
+        table{
+            border: 1px solid #000;
+        }
+        td{
+            padding: 20px 50px;
+        }
+        tr:nth-child(2n+1) > td:nth-child(2){
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

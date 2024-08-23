@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 페이지</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #self {
+            width: 300px; 
+            height: 50px; 
+            padding: 10px;
+        }
+        #years {
+            width: 50px; 
+            height: 12px; 
+        }
+        .button-container {
+            position: fixed;  
+            bottom: 20px;     
+            left: 50%;       
+            transform: translateX(-50%); 
+            display: flex;   
+            justify-content: center; 
+            gap: 10px;
+        }
+        
+        
+        
+
+
+
+        
+    </style>
+
+</head>
+<body><!--   
+input로 회원가입 유효성 검사 진행하기 
+range, date, time color, checkbox, 
+radio, file, submit, button, hidden, tel, url    -->
+<div class="outline">
+    <div class="box scale1"></div>
+</div>
+<h1>회원 기본 정보</h1>
+</br>아이디:<input type="text" id="userid" name="userid">4~12자의 영문 대소문자와 숫자로만 입력    
+
+</br>비밀번호:<input type="password" id="password" name="password">4~12자의 영문 대소문자와 숫자로만 입력   
+
+</br>비밀번호확인:<input type="password" id="password2" name="password2">
+
+</br>메일주소:<input type="email" id="email" name="email">
+
+</br>이름:<input type="name" id="name" name="name">
+
+<h1>개인 신상 정보</h1>
+
+</br> <label for="age">주민등록번호:</label>
+<input type="text" id="age" name="age" maxlength="13" placeholder="예: 1234561234567">
+</br><input type="text" id="years" name="years">년
+
+    <select id="months">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    </select>월
+    <select id="days">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+    <option>6</option>
+    <option>7</option>
+    <option>8</option>
+    <option>9</option>
+    <option>10</option>
+    <option>11</option>
+    <option>12</option>
+    <option>13</option>
+    <option>14</option>
+    <option>15</option>
+    <option>16</option>
+    <option>17</option>
+    <option>18</option>
+    <option>19</option>
+    <option>20</option>
+    <option>21</option>
+    <option>22</option>
+    <option>23</option>
+    <option>24</option>
+    <option>25</option>
+    <option>26</option>
+    <option>27</option>
+    <option>28</option>
+    <option>29</option>
+    <option>30</option>
+    <option>31</option>
+    </select>일
+
+</br>관심분야:
+<input type="checkbox" name="hobbys" value="컴퓨터">컴퓨터
+<input type="checkbox" name="hobbys" value="인터넷">인터넷
+<input type="checkbox" name="hobbys" value="여행">여행
+<input type="checkbox" name="hobbys" value="영화">영화
+<input type="checkbox" name="hobbys" value="음악">음악
+
+</br>성별:
+<input type="radio" id="male" name="gender" value="male">
+<label for="male">남성</label>
+<input type="radio" id="female" name="gender" value="female">
+<label for="female">여성</label>
+
+<div class="container">
+
+    <label for="self">자기소개:</label>
+    <textarea id="self" name="self"></textarea>
+</div>
+
+
+<div class="button-container">
+    <input type="button" value="다시 입력" onclick="click1()">
+    <input type="button" value="회원 가입" onclick="click2()">
+</div>
+
+
+
+</body>
+</html>
